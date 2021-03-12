@@ -1,0 +1,19 @@
+.MuiButton-text {
+  padding: 12px 17px !important;
+}
+#topbar {
+  background: #4c261b;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #000 !important;
+}

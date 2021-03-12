@@ -1,0 +1,126 @@
+.bannerSpanText {
+  color: rgb(255, 210, 0);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(0px, 0px);
+  visibility: visible;
+  z-index: 7;
+  text-align: left;
+  /* margin-top: -10px !important; */
+}
+.bannerh2text {
+  z-index: 6;
+  font-family: "Montserrat";
+  text-align: left;
+  height: auto;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  white-space: normal;
+  width: 600px;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  line-height: 55px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 50px;
+  padding-bottom: 10px;
+  transform-origin: 50% 50%;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  visibility: visible;
+}
+
+.abtComTitle {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+  /* border-bottom: 4px #ffd200 solid ; */
+}
+
+.abtComTitle::after {
+  background-color: #ffd200;
+  content: " ";
+  display: block;
+  height: 3px;
+  margin: 15px 0 20px;
+  width: 80px;
+}
+.abtComImg {
+  height: auto;
+  max-width: 100%;
+}
+.serviceBox {
+  border: 2px #ffd200 solid;
+  border-radius: 10px;
+}
+.serviceImg {
+  width: "20px";
+  border-radius: "50%";
+}
+.serviceHeadline {
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 700;
+}
+.serviceHeadline::after {
+  background-color: #ffd200;
+  content: " ";
+  display: block;
+  height: 3px;
+  margin: 15px auto;
+  width: 80px;
+}
+
+
+   .serviceDetails .hover {
+  
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  }
+   .serviceDetails .hover:before, .serviceDetails .hover:after {
+    
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: #e69500;
+  }
+  .serviceDetails:before {
+    left: 50%;
+  }
+ .serviceDetails:after {
+    right: 50%;
+  }
+  .footerIcons{
+      color: #fff;
+     
+  }
+
+  .getInTouch{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    
+  }
+  .getInTouchDetails{
+      color: #fff;
+     
+  }
+  .copyrightText{
+    color: rgba(255,255,255,0.8);
+    font-family: 'Open Sans';
+  }
+  #owl-demo .item{
+    margin: 3px;
+  }
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }

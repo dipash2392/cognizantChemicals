@@ -1,0 +1,37 @@
+.aboutbannertext{
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+   
+}
+.icon-box{
+    border:1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+    transform: rotate(45deg);
+}
+.icon{
+    font-size: 40px !important;
+    margin: 25px auto;
+    color: #ffd200 ;
+    transform: rotate(-45deg);
+}
+.counter{
+    font-size: 40px;
+}
+.counterText{
+    font-size: 20px;
+}
+.vm-iconbox{
+    background-color:white;
+    height: 90px;
+    width: 90px;
+    margin: 0px auto;
+    border-radius: "50%" !important;
+}
+.vm-icon{
+    font-size: 43px !important;
+    margin: 25px auto;
+}
