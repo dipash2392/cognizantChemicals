@@ -74,7 +74,7 @@ function App() {
                    </li>
                    <li class="nav-item">
                      <a
-                       href="#"
+                       href="/safety"
                        class="nav-link text-uppercase font-weight-bold"
                      >
                        Safety
@@ -82,23 +82,16 @@ function App() {
                    </li>
                    <li class="nav-item">
                      <a
-                       href="#"
+                       href="/legalCompliance"
                        class="nav-link text-uppercase font-weight-bold"
                      >
                        Legal Compliance
                      </a>
                    </li>
+                  
                    <li class="nav-item">
                      <a
-                       href="#"
-                       class="nav-link text-uppercase font-weight-bold"
-                     >
-                       Our Clients
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a
-                       href="#"
+                       href="/contactUs"
                        class="nav-link text-uppercase font-weight-bold"
                      >
                        Contact
