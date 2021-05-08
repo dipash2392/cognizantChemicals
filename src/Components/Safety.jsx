@@ -16,6 +16,82 @@ function Legal() {
       <div className="">
         <img src={bannerImg} alt="about" className="d-block w-100" />
       </div>
+      <div
+        className="container-fluid"
+        style={{ marginTop: "3%"}}
+      >
+        <div className="container text-center">
+          <h2 className="serviceHeadline">Safety Features</h2>
+        </div>
+        <div
+          className="container"
+          style={{ marginTop: "1%", paddingRight: "15%", paddingLeft: "15%" }}
+        >
+          <div className="row">
+            <div className="col-md-2 text-center checkIcon">
+              <CheckIcon />
+            </div>
+            <div className="col-md-10">
+              <span>
+                Every reactor is equipped with a Fainger Laser – the safety
+                relief valve. Also, we have installed a BS & B make rupture disk
+                on each reactors. Utilities, such as cooling tower, water jet
+                ejectors on a separate structure providing clear and open space
+                for material movement, are installed{" "}
+              </span>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 text-center checkIcon ">
+              <CheckIcon />
+            </div>
+            <div className="col-md-10">
+              <span>
+                Flame proof electric fittings. A centralised electronic panel
+                controls all equipment from single place. Whole plant has been
+                provided with proper earthing, deep pipe have been installed in
+                reactors and receivers and drums filling is also done with
+                proper earthing
+              </span>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 text-center checkIcon">
+              <CheckIcon />
+            </div>
+            <div className="col-md-10">
+              <span>
+                All the flanges are provided with copper jumpers for
+                uninterrupted continuity for discharge of static charge
+              </span>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 text-center checkIcon ">
+              <CheckIcon />
+            </div>
+            <div className="col-md-10">
+              <span>
+                {" "}
+                Auto temperature controllers are provided for all the reactors.
+                Vacuum braking is done with nitrogen{" "}
+              </span>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-2 text-center checkIcon">
+              <CheckIcon />
+            </div>
+            <div className="col-md-10">
+              <span>
+                {" "}
+                All reactors have separate external cooling coil for instant
+                cooling{" "}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="container" style={{ marginTop: "5%" }}>
         <div className="row ">
@@ -76,7 +152,7 @@ function Legal() {
               class="abtComImg "
               src={designSafety}
               alt=""
-              style={{ width: "30%" }}
+              style={{ width: "30%", borderRadius:12 }}
             />
           </div>
         </div>
@@ -89,7 +165,7 @@ function Legal() {
               class="abtComImg "
               src={processSafety}
               alt=""
-              style={{ width: "47%", marginTop: "7%" }}
+              style={{ width: "47%", marginTop: "7%" , borderRadius:12}}
             />
           </div>
           <div className="col-6 ">
@@ -144,82 +220,7 @@ function Legal() {
         </div>
       </div>
 
-      <div
-        className="container-fluid"
-        style={{ marginTop: "3%", backgroundColor: "#ffd200", padding: "3%" }}
-      >
-        <div className="container text-center">
-          <h2 className="serviceHeadline">Safety Features</h2>
-        </div>
-        <div
-          className="container"
-          style={{ marginTop: "1%", paddingRight: "15%", paddingLeft: "15%" }}
-        >
-          <div className="row">
-            <div className="col-md-2 text-center ">
-              <CheckIcon />
-            </div>
-            <div className="col-md-10">
-              <span>
-                Every reactor is equipped with a Fainger Laser – the safety
-                relief valve. Also, we have installed a BS & B make rupture disk
-                on each reactors. Utilities, such as cooling tower, water jet
-                ejectors on a separate structure providing clear and open space
-                for material movement, are installed{" "}
-              </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-2 text-center ">
-              <CheckIcon />
-            </div>
-            <div className="col-md-10">
-              <span>
-                Flame proof electric fittings. A centralised electronic panel
-                controls all equipment from single place. Whole plant has been
-                provided with proper earthing, deep pipe have been installed in
-                reactors and receivers and drums filling is also done with
-                proper earthing
-              </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-2 text-center ">
-              <CheckIcon />
-            </div>
-            <div className="col-md-10">
-              <span>
-                All the flanges are provided with copper jumpers for
-                uninterrupted continuity for discharge of static charge
-              </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-2 text-center ">
-              <CheckIcon />
-            </div>
-            <div className="col-md-10">
-              <span>
-                {" "}
-                Auto temperature controllers are provided for all the reactors.
-                Vacuum braking is done with nitrogen{" "}
-              </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-2 text-center ">
-              <CheckIcon />
-            </div>
-            <div className="col-md-10">
-              <span>
-                {" "}
-                All reactors have separate external cooling coil for instant
-                cooling{" "}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div className="container" style={{ marginTop: "5%" }}>
         <div className="row ">
           <div className="col-6 ">
@@ -257,7 +258,7 @@ function Legal() {
               class="abtComImg "
               src={electricalSafety}
               alt=""
-              style={{ width: "47%", marginTop: "7%" }}
+              style={{ width: "47%", marginTop: "7%", borderRadius:12 }}
             />
           </div>
         </div>
@@ -269,7 +270,7 @@ function Legal() {
               class="abtComImg "
               src={processSafety}
               alt=""
-              style={{ width: "47%", marginTop: "7%" }}
+              style={{ width: "47%", marginTop: "18%" , borderRadius:12}}
             />
           </div>
           <div className="col-6 ">
@@ -358,7 +359,7 @@ function Legal() {
               class="abtComImg "
               src={electricalSafety}
               alt=""
-              style={{ width: "47%", marginTop: "7%" }}
+              style={{ width: "47%", marginTop: "7%", borderRadius:12 }}
             />
           </div>
         </div>

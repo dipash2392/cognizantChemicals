@@ -10,7 +10,7 @@
   visibility: visible;
   z-index: 7;
   text-align: left;
-  /* margin-top: -10px !important; */
+  margin-top: 20px !important;
 }
 .bannerh2text {
   z-index: 6;
@@ -105,7 +105,7 @@
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffd200;
     
   }
   .getInTouchDetails{
@@ -124,3 +124,26 @@
     width: 100%;
     height: auto;
   }
+  #carouselExampleControls{
+    margin-top: 4%;
+  }
+  .icon-box{
+    border:1px solid #A9A9A9;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+    transform: rotate(45deg);
+}
+.serviceImages{
+  font-size: 40px !important;
+  margin: 15px auto;
+  color: #ffd200 ;
+  transform: rotate(-45deg);
+}
+
+.serviceDetails:hover{
+  cursor: pointer;
+}
+.icon-box:hover{
+  border:2px solid #ffd200;
+}

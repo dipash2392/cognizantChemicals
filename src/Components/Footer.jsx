@@ -3,7 +3,7 @@ import footerBG from "../img/footerBG.jpg";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-
+import "./hover.css"
 function App() {
   return (
     <div className="App">
@@ -11,8 +11,9 @@ function App() {
      <div
         className="container-fluid mt-5"
         style={{
-          backgroundImage: `url('${footerBG}') `,
-          backgroundRepeat: "no-repeat",
+          backgroundColor:"#000",
+          // backgroundImage: `url('${footerBG}') `,
+          // backgroundRepeat: "no-repeat",
           marginTop: "20px",
         }}
       >
@@ -24,7 +25,7 @@ function App() {
                   <a
                     href="#"
                     class="navbar-brand text-uppercase font-weight-bold"
-                    style={{ color: "#fff" }}
+                    style={{ color: "#ffd200" }}
                   >
                     Cognizant Chemicals
                   </a>
@@ -69,19 +70,31 @@ function App() {
                 >
                   <ul>
                     <li>
-                      <span>
-                        PHONE: +91 22 27621236
-                        <br />
-                        +91 22 27684477
+                      <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
+                        PHONE :</span><br/><span> +91 27425500
                       </span>
                     </li>
                     <li>
-                      <span>EMAIL: info@darshanchemicals.in</span>
+                    <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
+                        EMAIL :</span><br/><span> cognizantpvtltd@rediffmail.com <br/>cognizantchemicalpvtltd@gmail.com</span>
                     </li>
-                    <li>
-                      <span>
-                        ADDRESS: Darshan chemicals A-39 TTC industrial area
+                    <li> <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
+                    ADDRESS :</span><br/>
+                      <span> <span className="font-weight-bold">
+                      Registered office :
+ </span> Darshan chemicals A-39 TTC industrial area
                         pawane village Navi mumbai 400706 Maharastra India
+                      </span>
+                      <span> <span className="font-weight-bold">
+                      Unit I :
+ </span> W216A, MIDC Taloja,
+Raigad Dist. – 410208
+                      </span><br/>
+                      <span> <span className="font-weight-bold">
+                      Unit II :
+ </span> E 106 ADDL. Patalganga MIDC,
+Chavne Village,
+Panvel – 410220.ia
                       </span>
                     </li>
                   </ul>
@@ -109,7 +122,7 @@ function App() {
             </div>
             <hr style={{ borderTop: "1px solid gray" }} />
             <div className="container text-center">
-              <p className="copyrightText">© 2014 All rights reserved.</p>
+              <p className="copyrightText">© Cognizant Chemical Pvt Ltd - All Rights Reserved.</p>
             </div>
           </div>
         </div>

@@ -7,10 +7,14 @@
 */
 .navbar {
     transition: all 0.4s;
+    background: black !important;
   }
   
   .navbar .nav-link {
     color: #fff;
+  }
+  .logoDiv{
+    margin-left:-9% !important
   }
   
   .navbar .nav-link:hover,

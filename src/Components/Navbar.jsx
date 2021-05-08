@@ -2,19 +2,20 @@ import React, { useEffect } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import $ from "jquery";
 import "./navbar.css"
+import logo from "../img/logo.png"
 
 function App() {
-  useEffect(() => {
-    $(function () {
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 10) {
-          $(".navbar").addClass("active");
-        } else {
-          $(".navbar").removeClass("active");
-        }
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   $(function () {
+  //     $(window).on("scroll", function () {
+  //       if ($(window).scrollTop() > 10) {
+  //         $(".navbar").addClass("active");
+  //       } else {
+  //         $(".navbar").removeClass("active");
+  //       }
+  //     });
+  //   });
+  // }, []);
   return (
     <div className="App">
      
@@ -24,9 +25,13 @@ function App() {
          <header class="header">
            <nav class="navbar navbar-expand-lg fixed-top py-3">
              <div class="container">
+               <div class="logoDiv">
+
+               <img src={logo} className="mr-1"/>
                <a href="#" class="navbar-brand text-uppercase font-weight-bold">
                  Cognizant Chemicals
                </a>
+               </div>
                <button
                  type="button"
                  data-toggle="collapse"

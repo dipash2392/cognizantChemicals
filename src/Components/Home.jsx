@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import bannerImg from "../img/Chemicals_banner.jpg";
-import abtUs from "../img/abtus3.jpg";
+import abtUs from "../img/cognizant.jpg";
 import serviceImg1 from "../img/icon51.jpg";
 import "./home.css";
 import techNova from "../img/techNova.jpg";
-import arch from "../img/arch.jpg"
-import tagros from "../img/tagros.jpg"
+import arch from "../img/arch.jpg";
+import tagros from "../img/tagros.jpg";
 import polygel from "../img/polygel.jpg";
 import proVentus from "../img/proVentus.png";
 import malladi from "../img/malladi.jpg";
@@ -14,18 +14,20 @@ import kothari from "../img/kothari.jpg";
 import reliance from "../img/reliance.png";
 import srichementor from "../img/srichementor.png";
 import strides from "../img/strides.jpg";
-import moleculeBG from "../img/chemistry_banner.jpg"
-import banner from "../img/images.jpg"
-import banner1 from "../img/chemical-science.jpg"
-import Footer from "./Footer"
-import Navbar from "./Navbar"
+import moleculeBG from "../img/chemistry_banner.jpg";
+import banner from "../img/images.jpg";
+import banner1 from "../img/chemical-science.jpg";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 
 // import Breadcrumb from "./Breadcrum"
 function Home() {
-  
   return (
     <div className="">
-      <Navbar/>
+      <div>
+        <Navbar />
+      </div>
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -74,7 +76,7 @@ function Home() {
               class="d-block w-100"
               src={moleculeBG}
               alt="Third slide"
-              style={{ minHeight: "500px", backgroundAttachment: "fixed" }}
+              style={{ minHeight: "480px", backgroundAttachment: "fixed" }}
             />
             <div class="carousel-caption">
               {/* <h6 className="bannerSpanText">NATURE BEAUTY</h6>
@@ -104,12 +106,25 @@ function Home() {
         </a>
       </div>
       {/* section one */}
-      <div className="container" style={{ marginTop: "10%" }}>
+      <div className="container" style={{ marginTop: "8%" }}>
+        <div className="row">
+          <h2 className="abtComTitle">Welcome To Our Industry</h2>
+        </div>
         <div className="row ">
-          <div className="col-6 ">
-            <h2 className="abtComTitle">Cognizant Chemical</h2>
+          <div className="col-4">
+            <img
+              class="abtComImg "
+              src={abtUs}
+              alt=""
+              style={{ width: "100%", marginTop: "5%", borderRadius: 12 }}
+            />
+          </div>
+          <div className="col-8">
+            <h4>Cognizant Chemical</h4>
+
+            {/* <h2 className="abtComTitle">Cognizant Chemical</h2> */}
+            <br />
             <span>
-              <br />
               Darshan Chemicals was started in 1990, company initially started
               with trading and manufacturing textile chemicals. In 1998 company
               diversified and started its first distillation plants, since then
@@ -120,19 +135,7 @@ function Home() {
               high production efficiency enabling us to give our clients final
               product of required quality with desired yield, on time and at
               competitive costs. <br />
-              <br />
-              We provide contract manufacturing services to various industries
-              such as Pharmaceuticals, Refineries, Fertilizers, Amines, Paints
-              and Speciality Chemicals.
             </span>
-          </div>
-          <div className="col-6 text-center">
-            <img
-              class="abtComImg "
-              src={abtUs}
-              alt=""
-              style={{ width: "55%" }}
-            />
           </div>
         </div>
       </div>
@@ -143,10 +146,21 @@ function Home() {
       </div>
       <div className="container" style={{ marginTop: "5%" }}>
         <div className="row ">
-          <div className="col-6 serviceDetails">
-            <div className="row">
+          <div className="col-6 serviceDetails animate__animated animate__bounce">
+            <div className="row ">
               <div className="col-4 text-center">
-                <img
+                
+                  <div className="icon-box ">
+                  <img
+                  className="serviceImages"
+                  src={serviceImg1}
+                  alt="Second slide"
+                
+                />
+                  </div>
+                  
+              
+                {/* <img
                   class=""
                   src={serviceImg1}
                   alt="Second slide"
@@ -156,7 +170,7 @@ function Home() {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
-                />
+                /> */}
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">Azeotropic Distillation</h5>
@@ -172,10 +186,18 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6 ">
+          <div className="col-6 serviceDetails">
             <div className="row">
               <div className="col-4 text-center">
-                <img
+              <div className="icon-box">
+                  <img
+                  className="serviceImages"
+                  src={serviceImg1}
+                  alt="Second slide"
+                
+                />
+                  </div>
+                {/* <img
                   class=""
                   src={serviceImg1}
                   alt="Second slide"
@@ -185,7 +207,7 @@ function Home() {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
-                />
+                /> */}
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">
@@ -208,10 +230,18 @@ function Home() {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col-6 ">
+          <div className="col-6 serviceDetails ">
             <div className="row">
               <div className="col-4 text-center">
-                <img
+              <div className="icon-box">
+                  <img
+                  className="serviceImages"
+                  src={serviceImg1}
+                  alt="Second slide"
+                
+                />
+                  </div>
+                {/* <img
                   class=""
                   src={serviceImg1}
                   alt="Second slide"
@@ -221,7 +251,7 @@ function Home() {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
-                />
+                /> */}
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">Extractive Distillation</h5>
@@ -237,10 +267,18 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6 ">
+          <div className="col-6 serviceDetails">
             <div className="row">
               <div className="col-4 text-center">
-                <img
+              <div className="icon-box">
+                  <img
+                  className="serviceImages"
+                  src={serviceImg1}
+                  alt="Second slide"
+                
+                />
+                  </div>
+                {/* <img
                   class=""
                   src={serviceImg1}
                   alt="Second slide"
@@ -250,7 +288,7 @@ function Home() {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
-                />
+                /> */}
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">
@@ -273,15 +311,12 @@ function Home() {
         <h5>They are awesome people</h5>
       </div>
       <div className="container-fluid my-5 ">
-       
-         
-          <div
-            id="multi-item-example"
-            class="carousel slide carousel-multi-item"
-            data-ride="carousel"
-          >
-           
-            {/* <div class="controls-top">
+        <div
+          id="multi-item-example"
+          class="carousel slide carousel-multi-item"
+          data-ride="carousel"
+        >
+          {/* <div class="controls-top">
               <a
                 class="btn-floating"
                 href="#multi-item-example"
@@ -297,177 +332,161 @@ function Home() {
                <FacebookIcon/>
               </a>
             </div> */}
-           
-            <ol class="carousel-indicators">
-              <li
-                data-target="#multi-item-example"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#multi-item-example" data-slide-to="1"></li>
-              <li data-target="#multi-item-example" data-slide-to="2"></li>
-            </ol>
-          
-            <div class="carousel-inner text-center" role="listbox">
-              <div class="carousel-item active mb-2">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={techNova}
-                        alt="Card image cap"
-                        style={{width:"30%"}}
-                      />
-                     
-                    </div>
-                  </div>
 
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={arch}
-                        alt="Card image cap"
-                        style={{width:"50%"}}
-                      />
-                     
-                    </div>
-                  </div>
+          <ol class="carousel-indicators">
+            <li
+              data-target="#multi-item-example"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+          </ol>
 
-                  <div class="col-md-3 clearfix d-none d-md-block">
+          <div class="carousel-inner text-center" role="listbox">
+            <div class="carousel-item active mb-2">
+              <div class="row">
+                <div class="col-md-3">
                   <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={tagros}
-                        alt="Card image cap"
-                        style={{width:"58%"}}
-                      />
-                     
-                    </div>
+                    <img
+                      class="card-img-top"
+                      src={techNova}
+                      alt="Card image cap"
+                      style={{ width: "30%" }}
+                    />
                   </div>
-                  <div class="col-md-3 clearfix d-none d-md-block">
+                </div>
+
+                <div class="col-md-3 clearfix d-none d-md-block">
                   <div class="mb-2">
-                      <img
-                        class="card-img-top mt-4"
-                        src={polygel}
-                        alt="Card image cap"
-                        style={{width:"58%"}}
-                      />
-                     
-                    </div>
+                    <img
+                      class="card-img-top"
+                      src={arch}
+                      alt="Card image cap"
+                      style={{ width: "50%" }}
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={tagros}
+                      alt="Card image cap"
+                      style={{ width: "58%" }}
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top mt-4"
+                      src={polygel}
+                      alt="Card image cap"
+                      style={{ width: "58%" }}
+                    />
                   </div>
                 </div>
               </div>
-              <div class="carousel-item mb-2">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={proVentus}
-                        alt="Card image cap"
-                        style={{width:"40%"}}
-                      />
-                     
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={malladi}
-                        alt="Card image cap"
-                        style={{width:"50%"}}
-                      />
-                     
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top mt-4"
-                        src={kothari}
-                        alt="Card image cap"
-                        style={{width:"55%"}}
-                      />
-                     
-                    </div>
-                  </div>
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={reliance}
-                        alt="Card image cap"
-                        style={{width:"30%"}}
-                      />
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-              <div class="carousel-item mb-2">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={srichementor}
-                        alt="Card image cap"
-                        style={{width:"30%"}}
-                      />
-                     
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={strides}
-                        alt="Card image cap"
-                        style={{width:"30%"}}
-                      />
-                     
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={techNova}
-                        alt="Card image cap"
-                        style={{width:"30%"}}
-                      />
-                     
-                    </div>
-                  </div>
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                  <div class="mb-2">
-                      <img
-                        class="card-img-top"
-                        src={techNova}
-                        alt="Card image cap"
-                        style={{width:"30%"}}
-                      />
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
             </div>
-           
+            <div class="carousel-item mb-2">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={proVentus}
+                      alt="Card image cap"
+                      style={{ width: "40%" }}
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={malladi}
+                      alt="Card image cap"
+                      style={{ width: "50%" }}
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top mt-4"
+                      src={kothari}
+                      alt="Card image cap"
+                      style={{ width: "55%" }}
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={reliance}
+                      alt="Card image cap"
+                      style={{ width: "30%" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item mb-2">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={srichementor}
+                      alt="Card image cap"
+                      style={{ width: "30%" }}
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={strides}
+                      alt="Card image cap"
+                      style={{ width: "30%" }}
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={techNova}
+                      alt="Card image cap"
+                      style={{ width: "30%" }}
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix d-none d-md-block">
+                  <div class="mb-2">
+                    <img
+                      class="card-img-top"
+                      src={techNova}
+                      alt="Card image cap"
+                      style={{ width: "30%" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        
-       
+        </div>
       </div>
-    <Footer/>
+      <Footer />
     </div>
   );
 }
