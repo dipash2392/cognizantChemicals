@@ -1,33 +1,32 @@
 import React, { useEffect } from "react";
-import bannerImg from "../img/Chemicals_banner.jpg";
-import abtUs from "../img/cognizant.jpg";
-import serviceImg1 from "../img/icon51.jpg";
+import bannerImg from "../../img/Chemicals_banner.jpg";
+import abtUs from "../../img/cognizant.jpg";
+import serviceImg1 from "../../img/icon51.jpg";
 import "./home.css";
-import techNova from "../img/techNova.jpg";
-import arch from "../img/arch.jpg";
-import tagros from "../img/tagros.jpg";
-import polygel from "../img/polygel.jpg";
-import proVentus from "../img/proVentus.png";
-import malladi from "../img/malladi.jpg";
-import orchid from "../img/orchid.jpg";
-import kothari from "../img/kothari.jpg";
-import reliance from "../img/reliance.png";
-import srichementor from "../img/srichementor.png";
-import strides from "../img/strides.jpg";
-import moleculeBG from "../img/chemistry_banner.jpg";
-import banner from "../img/images.jpg";
-import banner1 from "../img/chemical-science.jpg";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import techNova from "../../img/techNova.jpg";
+import arch from "../../img/arch.jpg";
+import tagros from "../../img/tagros.jpg";
+import polygel from "../../img/polygel.jpg";
+import proVentus from "../../img/proVentus.png";
+import malladi from "../../img/malladi.jpg";
+import orchid from "../../img/orchid.jpg";
+import kothari from "../../img/kothari.jpg";
+import reliance from "../../img/reliance.png";
+import srichementor from "../../img/srichementor.png";
+import strides from "../../img/strides.jpg";
+import moleculeBG from "../../img/chemistry_banner.jpg";
+import banner1 from "../../img/chemical-science.jpg";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
+import AboutCognizant from "./AboutCognizant"
 
 // import Breadcrumb from "./Breadcrum"
 function Home() {
   return (
     <div className="">
-      <div>
+    
         <Navbar />
-      </div>
+      
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -51,10 +50,7 @@ function Home() {
               style={{ minHeight: "500px", backgroundAttachment: "fixed" }}
             />
             <div class="carousel-caption">
-              {/* <h6 className="bannerSpanText">NATURE BEAUTY</h6>
-              <h2 className="bannerh2text">
-                Overcoming technology challenges: making the most of resorces
-              </h2> */}
+            
             </div>
           </div>
           <div class="carousel-item">
@@ -105,9 +101,14 @@ function Home() {
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+<div className="container-fluid">
+        <AboutCognizant/>
+</div>
+
       {/* section one */}
-      <div className="container" style={{ marginTop: "8%" }}>
-        <div className="row">
+      {/* <div className="container" >
+        <div className="row" style={{ marginTop: "7%" }}>
           <h2 className="abtComTitle">Welcome To Our Industry</h2>
         </div>
         <div className="row ">
@@ -122,7 +123,6 @@ function Home() {
           <div className="col-8">
             <h4>Cognizant Chemical</h4>
 
-            {/* <h2 className="abtComTitle">Cognizant Chemical</h2> */}
             <br />
             <span>
               Darshan Chemicals was started in 1990, company initially started
@@ -138,13 +138,13 @@ function Home() {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Services */}
-      <div className="container text-center" style={{ marginTop: "5%" }}>
+      {/* <div className="container text-center" style={{ marginTop: "5%" }}>
         <h2 className="serviceHeadline">The Best Services</h2>
         <h5>we provide</h5>
-      </div>
-      <div className="container" style={{ marginTop: "5%" }}>
+      </div> */}
+      {/* <div className="container" style={{ marginTop: "5%" }}>
         <div className="row ">
           <div className="col-6 serviceDetails animate__animated animate__bounce">
             <div className="row ">
@@ -160,17 +160,6 @@ function Home() {
                   </div>
                   
               
-                {/* <img
-                  class=""
-                  src={serviceImg1}
-                  alt="Second slide"
-                  style={{
-                    width: "70px",
-                    borderRadius: "10px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
-                /> */}
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">Azeotropic Distillation</h5>
@@ -197,17 +186,7 @@ function Home() {
                 
                 />
                   </div>
-                {/* <img
-                  class=""
-                  src={serviceImg1}
-                  alt="Second slide"
-                  style={{
-                    width: "70px",
-                    borderRadius: "10px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
-                /> */}
+              
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">
@@ -241,17 +220,7 @@ function Home() {
                 
                 />
                   </div>
-                {/* <img
-                  class=""
-                  src={serviceImg1}
-                  alt="Second slide"
-                  style={{
-                    width: "70px",
-                    borderRadius: "10px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
-                /> */}
+               
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">Extractive Distillation</h5>
@@ -278,17 +247,7 @@ function Home() {
                 
                 />
                   </div>
-                {/* <img
-                  class=""
-                  src={serviceImg1}
-                  alt="Second slide"
-                  style={{
-                    width: "70px",
-                    borderRadius: "10px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
-                /> */}
+               
               </div>
               <div className="col-8">
                 <h5 className="serviceTitle">
@@ -303,35 +262,20 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Sevices end */}
       {/* clients */}
       <div className="container text-center" style={{ marginTop: "5%" }}>
         <h2 className="serviceHeadline">Our Clients</h2>
         <h5>They are awesome people</h5>
       </div>
-      <div className="container-fluid my-5 ">
+      <div className="container-fluid my-5 " >
         <div
           id="multi-item-example"
           class="carousel slide carousel-multi-item"
           data-ride="carousel"
         >
-          {/* <div class="controls-top">
-              <a
-                class="btn-floating"
-                href="#multi-item-example"
-                data-slide="prev"
-              >
-       <FacebookIcon/>
-              </a>
-              <a
-                class="btn-floating"
-                href="#multi-item-example"
-                data-slide="next"
-              >
-               <FacebookIcon/>
-              </a>
-            </div> */}
+          
 
           <ol class="carousel-indicators">
             <li

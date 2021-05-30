@@ -1,0 +1,17 @@
+.textColor{
+    color: #fff !important;
+    /* background-color: "#a177ff" !important; */
+}
+.parallax {
+    /* The image used */
+    background-image: url("../../img/lab.jpg");
+  
+    /* Set a specific height */
+    min-height: 350px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

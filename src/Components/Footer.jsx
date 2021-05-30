@@ -4,6 +4,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import "./hover.css"
+import "./Home/home.css"
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,7 @@ function App() {
      <div
         className="container-fluid mt-5"
         style={{
-          backgroundColor:"#000",
+          backgroundColor:"#00203FFF",
           // backgroundImage: `url('${footerBG}') `,
           // backgroundRepeat: "no-repeat",
           marginTop: "20px",
@@ -24,7 +25,7 @@ function App() {
                 <div class="row">
                   <a
                     href="#"
-                    class="navbar-brand text-uppercase font-weight-bold"
+                    class="navbar-brand text-uppercase font-weight-bold " data-aos="fade-down"
                     style={{ color: "#ffd200" }}
                   >
                     Cognizant Chemicals
@@ -62,22 +63,14 @@ function App() {
 
               <div className="col-4">
                 <div className="row">
-                  <h2 className="getInTouch mt-2">Get In Touch</h2>
+                  <h2 className="getInTouch mt-2"  data-aos="fade-down">Get In Touch</h2>
                 </div>
                 <div
                   className="row getInTouchDetails mt-4"
                   style={{ fontSize: "13px" }}
                 >
                   <ul>
-                    <li>
-                      <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
-                        PHONE :</span><br/><span> +91 27425500
-                      </span>
-                    </li>
-                    <li>
-                    <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
-                        EMAIL :</span><br/><span> cognizantpvtltd@rediffmail.com <br/>cognizantchemicalpvtltd@gmail.com</span>
-                    </li>
+                   
                     <li> <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
                     ADDRESS :</span><br/>
                       <span> <span className="font-weight-bold">
@@ -97,12 +90,21 @@ Chavne Village,
 Panvel – 410220.ia
                       </span>
                     </li>
+                    <li>
+                      <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
+                        PHONE :</span><br/><span> +91 27425500
+                      </span>
+                    </li>
+                    <li>
+                    <span className="font-weight-bold hvr-grow" style={{color:"#ffd200"}}>
+                        EMAIL :</span><br/><span> cognizantpvtltd@rediffmail.com <br/>cognizantchemicalpvtltd@gmail.com</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div className="col-4  ">
                 <div className="row ml-5">
-                  <h2 className="getInTouch mt-2">Connect Us on</h2>
+                  <h2 className="getInTouch mt-2"  data-aos="fade-down">Connect Us on</h2>
                 </div>
                 <div className="row mt-4 ml-5">
                   <FacebookIcon

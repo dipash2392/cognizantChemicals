@@ -4,18 +4,19 @@ import $ from "jquery";
 import "./navbar.css"
 import logo from "../img/logo.png"
 
+
 function App() {
-  // useEffect(() => {
-  //   $(function () {
-  //     $(window).on("scroll", function () {
-  //       if ($(window).scrollTop() > 10) {
-  //         $(".navbar").addClass("active");
-  //       } else {
-  //         $(".navbar").removeClass("active");
-  //       }
-  //     });
-  //   });
-  // }, []);
+  useEffect(() => {
+    $(function () {
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 10) {
+          $(".navbar").addClass("active");
+        } else {
+          $(".navbar").removeClass("active");
+        }
+      });
+    });
+  }, []);
   return (
     <div className="App">
      
@@ -59,24 +60,24 @@ function App() {
                        href="/aboutus"
                        class="nav-link text-uppercase font-weight-bold"
                      >
- About Us                    </a>
+                     About Us                    </a>
                    </li>
                    <li class="nav-item">
                      <a
-                       href="#"
+                       href="/plantDetails"
                        class="nav-link text-uppercase font-weight-bold"
                      >
-                       Products
-                     </a>
+                     Plant Details                    </a>
                    </li>
                    <li class="nav-item">
                      <a
-                       href="#"
+                       href="/service"
                        class="nav-link text-uppercase font-weight-bold"
                      >
-                       QC & RD
+                       Services
                      </a>
                    </li>
+                
                    <li class="nav-item">
                      <a
                        href="/safety"

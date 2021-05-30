@@ -19,6 +19,7 @@ export default function ContactUs() {
       .then(
         (result) => {
           console.log(result.text);
+         
         },
         (error) => {
           console.log(error.text);
@@ -29,6 +30,7 @@ export default function ContactUs() {
   return (
     <div>
       <Navbar />
+      
       <img src={contactUs} alt="about" className="d-block w-100" />
       <div className="container text-center" style={{ marginTop: "5%" }}>
         <h2 className="serviceHeadline">Contact Us</h2>

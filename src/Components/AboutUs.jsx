@@ -1,43 +1,50 @@
 import React, { useEffect } from "react";
 import abtUs from "../img/carousel.jpg";
-import serviceImg1 from "../img/icon51.jpg";
 import "./about.css";
 import "../App.css";
 import $ from "jquery";
 import founder from "../img/founder.png";
-import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
-import Card from '@material-ui/core/Card';
+import { makeStyles } from "@material-ui/core/styles";
+import clsx from "clsx";
+import Card from "@material-ui/core/Card";
 import TrackChangesIcon from "@material-ui/icons/TrackChanges";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import CardContent from "@material-ui/core/CardContent";
+import CardActions from "@material-ui/core/CardActions";
+import Collapse from "@material-ui/core/Collapse";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import { red } from "@material-ui/core/colors";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import Gallery from "./Gallery/Gallery";
+import chairman from "../img/chairman.jpg";
+import director1 from "../img/director1.jpg";
+import director2 from "../img/director2.jpg";
+import director3 from "../img/director3.jpg";
+
 const useStyles = makeStyles((theme) => ({
   root: {
+    hrigth: 200,
+    width: 300,
     maxWidth: 345,
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
+    transform: "rotate(0deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
       duration: theme.transitions.duration.shortest,
     }),
   },
   expandOpen: {
-    transform: 'rotate(180deg)',
+    transform: "rotate(180deg)",
   },
   avatar: {
     backgroundColor: red[500],
@@ -47,9 +54,6 @@ function Home() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   useEffect(() => {
     $(document).ready(function () {
@@ -79,24 +83,25 @@ function Home() {
   return (
     <div className="">
       <Navbar />
-      <div className="mt-5">
-        <img src={abtUs} alt="about" className="d-block w-100" />
-        <div className="container" style={{ marginTop: "-13%" }}>
+      <div className="">
+        {/* <Carousel/> */}
+        <img src={abtUs} alt="about" className="d-block w-100 abtBannerImg" />
+        <div className="container" style={{ marginTop: "-10%" }}>
           <h2
             className="aboutbannertext"
             style={{ borderBottom: "3px solid red" }}
           >
             About Us
           </h2>
-          
         </div>
       </div>
       {/* section one */}
       <div className="container" style={{ marginTop: "13%" }}>
         <div className="row ">
-          <div className="col-6 ">
+          <div className="col-6 " >
             <h2 className="abtComTitle">Our Managing Directors</h2>
-            <span >
+            <div data-aos="zoom-in">
+            <span>
               <br />I do not know how history will judge me, but let me say that
               I've spent a lot of time & energy trying to transform Cognizant
               Group from a patriarchal concern to an institutional enterprise.
@@ -111,219 +116,138 @@ function Home() {
               transformation.
             </span>
             <div className="text-right mt-3">
-              <span className="" style={{ color: "#ffd200", fontSize: 30 }}>
+              <span className="" style={{ color: "#00203FFF", fontSize: 30 }}>
                 -{" "}
               </span>
-              <span className="bold">S. Venkatesan Mudliar</span>
+              <span className="name">S. Venkatesan Mudliar</span>
+            </div>
+            <div className="text-right">
+              <span className="bold">Chairman & Managing Director</span>
+            </div>
             </div>
           </div>
           <div className="col-6 text-center ">
-            <img
-              class="abtComImg mt-5 "
-              src={founder}
-              alt=""
-              style={{ width: "55%" }}
-            />
+            <img class="abtComImg mt-5 " src={chairman} alt="" />
           </div>
         </div>
       </div>
       <div className="container mt-5">
         <div className="row text-center ">
           <div className="col-md-4">
-          <Card className="p-2 hvr-reveal">
-            <img
-              class="abtComImg mt-3"
-              src={founder}
-              alt=""
-              style={{ width: "55%" }}
-            />
-            <br />
-            <span className="" style={{padding:"2%"}}>
-              <br />I do not know how history will judge me, but let me say that
-              I've spent a lot of time & energy trying to transform Cognizant
-              Group from a patriarchal concern to an institutional enterprise.
-              It would therefore be a mark of failure on my part if it were
-              perceived that S. Venkatesan Mudlair epitomises the groups
-              success.
+            <Card className="p-2 hvr-reveal" >
+              <img
+                class="abtComImg mt-3"
+                src={director1}
+                alt=""
+                style={{ width: "55%" }}
+              />
               <br />
-            </span>
-            <div className="text-right mt-3">
-              <span className="" style={{ color: "#ffd200", fontSize: 30 }}>
-                -{" "}
+              <div data-aos="zoom-in">
+              <span className="" style={{ padding: "2%" }} >
+                <br />
+                All appreciated things don't come early it's either hard work or
+                luck that brings it to you & Cognizant Group is hard work of S.
+                Venkatasen Mudliar. The other part of it being cooperation as
+                Miss's Usha V. Mudliar.
+                <br />
+                <br />
               </span>
-              <span className="bold">S. Venkatesan Mudliar</span>
-            </div>
-            <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-        <FacebookIcon
-                    className=""
-                    style={{ fontSize: "30px" }}
-                  />
-                
-        </IconButton>
-        <IconButton aria-label="share">
-        <TwitterIcon
-                    className=" "
-                    style={{ fontSize: "30px" }}
-                  />
-                
-        </IconButton>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-            <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-          </Typography>
-          
-        </CardContent>
-      </Collapse>
+              <div className="text-right mt-3">
+                <span className="" style={{ color: "#00203FFF", fontSize: 30 }}>
+                  -{" "}
+                </span>
+                <span className="name">Mrs. Usha Mudliar</span>
+              </div>
+              <div className="text-right">
+                <span className="bold">Chairman & Managing Director</span>
+              </div>
+              </div>
+              <CardActions disableSpacing>
+                <IconButton aria-label="add to favorites">
+                  <FacebookIcon className="" style={{ fontSize: "30px" }} />
+                </IconButton>
+                <IconButton aria-label="share">
+                  <TwitterIcon className=" " style={{ fontSize: "30px" }} />
+                </IconButton>
+              </CardActions>
             </Card>
           </div>
 
           <div className="col-md-4">
-          <Card className="p-2 hvr-reveal">
-            <img
-              class="abtComImg mt-3"
-              src={founder}
-              alt=""
-              style={{ width: "55%" }}
-            />
-            <br />
-            <span className="" style={{padding:"2%"}}>
-              <br />I do not know how history will judge me, but let me say that
-              I've spent a lot of time & energy trying to transform Cognizant
-              Group from a patriarchal concern to an institutional enterprise.
-              It would therefore be a mark of failure on my part if it were
-              perceived that S. Venkatesan Mudlair epitomises the groups
-              success.
+            <Card className="p-2 hvr-reveal">
+              <img
+                class="abtComImg mt-3"
+                src={director3}
+                alt=""
+                style={{ width: "55%" }}
+              />
               <br />
-            </span>
-            <div className="text-right mt-3">
-              <span className="" style={{ color: "#ffd200", fontSize: 30 }}>
-                -{" "}
+              <div data-aos="zoom-in">
+              <span className="" style={{ padding: "2%" }}>
+                <br />
+                Further progress has also been made in the adoption of
+                Cognizant’s advanced blasting services by customers in Dubai,
+                Srilanka, and Singapore. These services have become a key
+                contributor to Cognizant’s contract wins and extensions.
+                <br />
               </span>
-              <span className="bold">S. Venkatesan Mudliar</span>
-            </div>
-            <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-        <FacebookIcon
-                    className=""
-                    style={{ fontSize: "30px" }}
-                  />
-                
-        </IconButton>
-        <IconButton aria-label="share">
-        <TwitterIcon
-                    className=" "
-                    style={{ fontSize: "30px" }}
-                  />
-                
-        </IconButton>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-            <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-          </Typography>
-          
-        </CardContent>
-      </Collapse>
+              <div className="text-right mt-3">
+                <span className="" style={{ color: "#00203FFF", fontSize: 30 }}>
+                  -{" "}
+                </span>
+                <span className="name">Mr. Pravin Mudliar</span>
+              </div>
+              <div className="text-right">
+                <span className="bold">Director</span>
+              </div>
+              </div>
+              <CardActions disableSpacing>
+                <IconButton aria-label="add to favorites">
+                  <FacebookIcon className="" style={{ fontSize: "30px" }} />
+                </IconButton>
+                <IconButton aria-label="share">
+                  <TwitterIcon className=" " style={{ fontSize: "30px" }} />
+                </IconButton>
+              </CardActions>
             </Card>
           </div>
 
           <div className="col-md-4">
-          <Card className="p-2 hvr-reveal">
-            <img
-              class="abtComImg mt-3"
-              src={founder}
-              alt=""
-              style={{ width: "55%" }}
-            />
-            <br />
-            <span className="" style={{padding:"2%"}}>
-              <br />I do not know how history will judge me, but let me say that
-              I've spent a lot of time & energy trying to transform Cognizant
-              Group from a patriarchal concern to an institutional enterprise.
-              It would therefore be a mark of failure on my part if it were
-              perceived that S. Venkatesan Mudlair epitomises the groups
-              success.
+            <Card className="p-2 hvr-reveal">
+              <img
+                class="abtComImg mt-3"
+                src={director2}
+                alt=""
+                style={{ width: "55%" }}
+              />
               <br />
-            </span>
-            <div className="text-right mt-3">
-              <span className="" style={{ color: "#ffd200", fontSize: 30 }}>
-                -{" "}
+              <div data-aos="zoom-in">
+              <span className="" style={{ padding: "2%" }}>
+                <br />
+                Cognizant’s broad operating footprint, a determined self-help
+                agenda and a focus on differentiated products and services,
+                enabled the Company to deliver a resilient performance against
+                considerable headwinds in 2019.
+                <br /><br/>
               </span>
-              <span className="bold">S. Venkatesan Mudliar</span>
-            </div>
-            <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-        <FacebookIcon
-                    className=""
-                    style={{ fontSize: "30px" }}
-                  />
-                
-        </IconButton>
-        <IconButton aria-label="share">
-        <TwitterIcon
-                    className=" "
-                    style={{ fontSize: "30px" }}
-                  />
-                
-        </IconButton>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-            <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-          </Typography>
-          
-        </CardContent>
-      </Collapse>
+              <div className="text-right mt-3">
+                <span className="" style={{ color: "#ffd200", fontSize: 30 }}>
+                  -{" "}
+                </span>
+                <span className="name">Mr. Rupesh Mudliar</span>
+              </div>
+              <div className="text-right">
+                <span className="bold">Director</span>
+              </div>
+              </div>
+              <CardActions disableSpacing>
+                <IconButton aria-label="add to favorites">
+                  <FacebookIcon className="" style={{ fontSize: "30px" }} />
+                </IconButton>
+                <IconButton aria-label="share">
+                  <TwitterIcon className=" " style={{ fontSize: "30px" }} />
+                </IconButton>
+              </CardActions>
             </Card>
           </div>
         </div>
@@ -332,11 +256,11 @@ function Home() {
 
       <div
         className="container-fluid"
-        style={{ marginTop: "5%", backgroundColor: "#ffd200", padding: "5%" }}
+        style={{ marginTop: "5%", backgroundColor: "#ADEFD1FF", padding: "5%" }}
       >
         <div className="row ">
           <div className="col-6 serviceDetails">
-            <div className="row">
+            <div className="row" data-aos="fade-right">
               <div className="col-4 text-center">
                 <div className="vm-iconbox" style={{ borderRadius: "50%" }}>
                   <VisibilityIcon className="vm-icon" />
@@ -353,7 +277,7 @@ function Home() {
             </div>
           </div>
           <div className="col-6 ">
-            <div className="row">
+            <div className="row" data-aos="fade-left">
               <div className="col-4 text-center">
                 <div className="vm-iconbox" style={{ borderRadius: "50%" }}>
                   <TrackChangesIcon className="vm-icon" />
@@ -371,6 +295,13 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      {/* ****Gallery**** */}
+      <div className="mt-5">
+      <div className="container text-center" style={{ marginTop: "5%" ,marginBottom:"3%"}}>
+        <h2 className="serviceHeadline">Our Memories</h2>
+      </div>
+        <Gallery />
       </div>
       {/* Sevices end */}
       {/* clients */}

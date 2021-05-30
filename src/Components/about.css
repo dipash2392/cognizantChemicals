@@ -1,3 +1,11 @@
+.abtComImg{
+    width: 280px !important;
+    border-radius: 135px;
+}
+.name{
+    font-weight: 500;
+}
+
 .aboutbannertext{
     font-family: "Open Sans";
     font-size: 40px;
